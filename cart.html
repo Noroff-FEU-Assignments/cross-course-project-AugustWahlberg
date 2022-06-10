@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="UTF-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<title>Rainy Days | Cart</title>
+			<link rel="stylesheet" href="style.css" />
+			<link
+				href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+				rel="stylesheet"
+			/>
+			<link
+				href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+				rel="stylesheet"
+			/>
+			<link
+				rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			/>
+		</head>
+	
+		<body>
+			<header>
+				<!-- The beginning of the menu -->
+				<div class="header">
+					<a href="index.html">
+						<img src="./images/logo-rainy-days-navy.png" alt="Rainy Days logo" />
+					</a>
+					<!-- input checkbox is the button that shows and hides the menu in mobile view-->
+					<input type="checkbox" class="menu-btn" id="menu-btn" />
+					<!-- the clickable menu botton -->
+					<label for="menu-btn" class="menu-icon">
+						<!-- The visible text -->
+						<span class="menu-text"></span>
+						<!-- The visible hamburger menu -->
+						<span class="nav-icon"></span>
+					</label>
+					<ul class="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#About-us">About us</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="#Contact">Contact</a></li>
+						<li>
+							<a href="cart.html"><b>Cart</b></a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!-- The end of the menu -->
+      
+			<main id="cartItems">
+        <h1>Cart</h1>
+				<div class="back-to-shop">
+					<i class="fa fa-arrow-left" style="color: #1a212e"></i
+					><a href="shop.html">Back to Shop</a>
+				</div>
+				
+					<div id="error"></div>
+					<section class="container-cart-summary">
+						<div class="wrap-cart">
+							<div class="product-summary">
+								<div class="removebtn">
+									<i class="fa fa-close" style="color: #1a212e"></i>
+								</div>
+								<h2>The Allrounder</h2>
+								<img
+									src="/images/Jakke_1_blå.png"
+									alt="The Allrounder jacket blue"
+								/>
+								<p>180$</p>
+								<div class="edit">
+									<label for="Sizes"></label>
+									<select name="Size" id="Sizes">
+										<option value="XXS">XXS</option>
+										<option value="XS">XS</option>
+										<option value="S">S</option>
+										<option value="M">M</option>
+										<option value="L">L</option>
+										<option value="XL">XL</option>
+									</select>
+									<label for="color-select"></label>
+									<select name="color-select" id="color-select">
+										<option value="Navy">Navy</option>
+										<option value="Yellow">Yellow</option>
+									</select>
+									<div class="btn-edit-wrap">
+										<div class="btnedit-minus">-</div>
+										<button class="btnedit-qnt">1</button>
+										<button class="btnedit-plus">+</button>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<div class="wrap-cart">
+							<div class="price-summary">
+								<h3>Order Summary</h3>
+								<div class="line">
+									<p>1x The Allrounder</p>
+									<p>180$</p>
+								</div>
+								<div class="line">
+									<p>Shipping - DHL</p>
+									<p>20$</p>
+								</div>
+								<div class="striped-border"></div>
+								<div class="line">
+									<h5>Total</h5>
+									<h5>200$</h5>
+								</div>
+								<div class="additional-information">
+									<p>Estimated delivery time: 5-8 working days</p>
+									<p>Free return</p>
+									<p>Shipping to europe</p>
+								</div>
+							</div>
+						</div>
+					</section>
+	
+					<section class="container-cart-typein">
+						<div class="wrap-cart">
+							<div class="shipping-address">
+								<h3>Shipping Address</h3>
+								<label for="fullname"> Full Name </label> 
+                <div class="form-error" id="fullNameError">*Name is required</div>
+								<input
+									type="text"
+									id="fullname"
+									name="fullname"
+									placeholder="John Doe"
+								/>
+
+								<label for="email"> Email</label>
+                <div class="form-error" id="emailError">*Please fill in a valid email</div>
+								<input
+									type="text"
+									id="email"
+									name="email"
+									placeholder="john@example.com"
+								/>
+
+								<label for="address">Address</label>
+                <div class="form-error" id="addressError">*Address is required<address></address></div>
+								<input
+									type="text"
+									id="address"
+									name="address"
+									placeholder="542 W. 15th Street"
+								/>
+
+								<label for="city"> City</label>
+                <div class="form-error" id="cityError">*City is required</div>
+								<input 
+                type="text" 
+                id="city" 
+                name="city" 
+                placeholder="New York" />
+
+								<label for="state"> State/Area</label>
+                <div class="form-error" id="stateError">*State/area is required</div>
+
+								<input type="text" 
+                id="state" 
+                name="state" 
+                placeholder="NY" />
+
+								<label for="zip"> ZIP/Postal Code</label>
+                <div class="form-error" id="zipError">*ZIP/Postal code is required</div>
+
+								<input type="number" 
+               							id="zip" 
+                						name="zip" 
+                						placeholder="10001" />
+
+								<label for="country"> Country</label>
+                <div class="form-error" id="countryError">*Country is required</div>
+								<input
+									type="text"
+									id="country"
+									name="country"
+									placeholder="United States"
+								/>
+							</div>
+						</div>
+	
+
+						<div class="wrap-cart">
+							<div class="payment-information">
+								<h3>Payment information</h3>
+								<p>Accepted Cards</p>
+								<div class="icon-container">
+									<i class="fa fa-cc-visa" style="color: navy"></i>
+									<i class="fa fa-cc-mastercard" style="color: orangered"></i>
+								</div>
+
+								<label for="cardname"> Name on Card</label>
+                <div class="form-error" id="cardNameError">*Card name is required</div>
+								<input
+									type="text"
+									id="cardname"
+									name="cardname"
+									placeholder="John Doe"
+								/>
+
+								<label for="cardnumber"> Card number</label>
+                <div class="form-error" id="cardNumberError">*Please fill in a valid card number </div>
+								<input
+									type="number"
+									id="cardnumber"
+									name="cardnumber"
+									placeholder="1111222233334444"
+								/>
+
+								<label for="expmonth"> Expiry month</label>
+                <div class="form-error" id="expMonthError">*Please fill in a expiry month </div>
+								<input
+                  					type="number"
+									id="expmonth"
+									name="expmonth"
+									placeholder="04"
+								/>
+
+								<label for="expyear"> Expire Year</label>
+                <div class="form-error" id="expYearError">*Please fill in an expiry year </div>
+								<input
+									type="number"
+									id="expyear"
+									name="expyear"
+									placeholder="2022"
+								>
+                
+                
+								<label for="cvv"> CVV/CVC</label>
+                <div class="form-error" id="cvvError">*Please fill in an expire year </div>
+								<input 
+                  type="number" 
+                  id="cvv" 
+                  name="cvv" 
+                  placeholder="576" />
+                  <form id="data-form">
+                  <button class="btnpay" type="submit">Order & Pay</button>
+                </form>
+							</div>
+						</div>
+					</section>
+				
+			</main>
+	
+			<footer>
+				<div class="wrapfooter">
+					<div id="Contact" class="footer">
+						<h3>Get in Touch</h3>
+						<h4>contact@rainydays.com</h4>
+						<h4>(+47) 23 20 23 20</h4>
+						<h5>Monday - Friday 10:00 - 1800</h5>
+						<div class="footerbottom">
+							<a href="#">Terms & Conditions</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Use of coockies</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<script src="javascript/formValidation.js" type="module"></script>
+		</body>
+	</html>
